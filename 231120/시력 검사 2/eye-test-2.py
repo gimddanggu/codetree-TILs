@@ -2,7 +2,7 @@ eyesight = float(input())
 result = ''
 
 if eyesight >= 1.0:
-    result = 'Hight'
+    result = 'High'
 
 elif eyesight >= 0.5:
     result = 'Middle'
