@@ -1,6 +1,6 @@
 a = int(input())
 
-if a> 80:
+if a>= 80:
     print('pass')
 
 else:
