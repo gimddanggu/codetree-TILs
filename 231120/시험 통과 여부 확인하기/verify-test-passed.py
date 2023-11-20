@@ -4,4 +4,4 @@ if a> 80:
     print('pass')
 
 else:
-    print(f'{score:80-a} more score')
+    print(f'{a-80} more score')
