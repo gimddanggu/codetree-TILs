@@ -16,4 +16,4 @@ for a in arrange[:flag]:
 
 
 
-print(arr_sum, arr_ev)
+print(arr_sum, around(arr_ev))
