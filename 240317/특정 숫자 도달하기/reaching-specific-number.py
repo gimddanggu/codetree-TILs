@@ -1,6 +1,7 @@
 arr_sum = 0 
 arr_ev = 0
-arrange = [4, 10, 37, 53, 88, 260, 67, 88, 500, 400]
+
+arrange = list(map(int, input().split()))
 flag = 0
 
 for a in arrange:
