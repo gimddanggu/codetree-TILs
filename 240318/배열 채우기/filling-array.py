@@ -7,6 +7,7 @@ for i in arr:
     cnt += 1
     if i == 0:
         break;
-
-for i in reversed(arr[:cnt-1]):
+if cnt < 10:
+    cnt -= 1
+for i in reversed(arr[:cnt]):
     print(i, end=' ')
