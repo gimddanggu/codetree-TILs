@@ -1,3 +1,3 @@
 sScore = list(map(float, input().split()))
 
-print(sum(sScore)/len(sScore))
+print(round(sum(sScore)/len(sScore)))
