@@ -1,11 +1,12 @@
 student = int(input())
-sc1 = list(map(int, input().split()))
-sc2 = list(map(int, input().split()))
-sc3 = list(map(int, input().split()))
 
-
-st_sc = [sc1, sc2, sc3]
+st_sc = []
 st_avg = []
+
+for i in range(student):
+    st_sc.append(list(map(int, input().split())))
+
+
 
 for i in st_sc:
     sc_sum = 0
