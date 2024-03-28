@@ -1,10 +1,11 @@
 num = int(input())
 arr = [1, num]
+cnt = 1
 
-
-for i in range(2,100):
-    arr.append(arr[i-2] + arr[i-1])
-    if arr[i] >= 100:
+while(True):
+    cnt += 1
+    arr.append(arr[cnt-2] + arr[cnt-1])
+    if arr[cnt] >= 100:
         break;
 
 for a in arr:
