@@ -7,5 +7,6 @@ for i in range(len(arr)):
         arr[i] += 3
 
 for ar in arr:
-    if ar != 0:
-        print(ar, end=' ')
+    if ar == 0:
+        break;
+    print(ar, end=' ')
