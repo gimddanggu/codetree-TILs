@@ -14,5 +14,6 @@ for _ in range(qNum):
             print(0)
 
     else:
-        for i in range(q[2]):
+        for i in range(q[1]-1, q[2]):
             print(n_list[i], end = ' ')
+        print()
