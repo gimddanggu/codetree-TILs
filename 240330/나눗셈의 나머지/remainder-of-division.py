@@ -5,7 +5,7 @@ r_sum = 0
 cnt_arr = [0]*(b+1)
 remain_arr = []
 result_arr = []
-while(a>=1):
+while(a>1):
     remain_arr.append(a % b)
     a = a // b
 
