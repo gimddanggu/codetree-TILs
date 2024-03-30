@@ -3,6 +3,8 @@ arr = list(map(int, input().split()))
 cnt_arr = [0]*11
 
 for elem in arr:
+    if elem == 0:
+        break;
     if elem != 100:
         cnt_arr[elem // 10] += 1
     elif elem == 100:
