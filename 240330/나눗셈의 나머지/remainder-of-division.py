@@ -1,6 +1,6 @@
 t = tuple(map(int, input().split()))
 a, b = t[0], t[1]
-
+r_sum = 0
 cnt_arr = [0]*(b+1)
 remain_arr = []
 result_arr = []
@@ -14,5 +14,7 @@ while(True):
 for elem in remain_arr:
     cnt_arr[elem] += 1
 
-result_arr = [i ** 2 for i in cnt_arr]
-print(sum(result_arr))
+for i in cnt_arr:
+    r_sum += i ** 2
+
+print(r_sum)
