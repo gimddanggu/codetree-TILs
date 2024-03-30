@@ -1,7 +1,7 @@
 import sys
 cn = int(input())
 nList = list(map(int, input().split()))
-minVal = sys.maxsize
+minVal = nList[0]
 
 for i in nList:
     if i < minVal:
