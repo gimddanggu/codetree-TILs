@@ -2,10 +2,12 @@ import sys
 cn = int(input())
 nList = list(map(int, input().split()))
 minVal = nList[0]
-
+cnt = 1
 for i in nList:
     if i < minVal:
         minVal = i 
+        cnt = 1
+    elif i == minVal:
+        cnt += 1
 
-result = nList.count(minVal)
-print(minVal, result)
+print(minVal, cnt)
