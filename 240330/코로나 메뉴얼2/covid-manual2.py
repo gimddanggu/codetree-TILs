@@ -10,29 +10,17 @@ person.append(person3)
 #person = [tuple(input().split()) for _ in range(2)]
 for elem in person:
     if elem[0] == 'Y'and int(elem[1]) >= 37:
-        result = 'A'
+        cnt_arr[0] += 1
 
     elif elem[0] == 'Y'and int(elem[1]) < 37:
-        result = 'C'
+        cnt_arr[2] += 1 
 
     elif elem[0] == 'N'and int(elem[1]) >= 37:
-        result = 'B' 
+        cnt_arr[1] += 1 
 
     else:
-        result = 'D'
+        cnt_arr[3] += 1 
     
-    result_arr.append(result)
-
-
-for arr in result_arr:
-    if arr == 'A':
-        cnt_arr[0] += 1
-    elif arr == 'B':
-        cnt_arr[1] += 1
-    elif arr == 'C':
-        cnt_arr[2] += 1
-    else:
-        cnt_arr[3] += 1
 
 for i in range(4):
     print(cnt_arr[i], end=' ')
