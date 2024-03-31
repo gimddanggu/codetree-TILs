@@ -1,7 +1,8 @@
-n = int(input())
+'''n = int(input())
 n_list = list(map(int, input().split()))
 result_arr = [0]
 # 오른쪽에 있는 가장 큰 수 - 왼쪽에 있는 작은 수
+'''
 '''min_val = 1001
 for idx, val in enumerate(n_list):
     if val < min_val and idx != len(n_list):
@@ -26,6 +27,7 @@ for idx, val in enumerate(n_list):
  6 2 3 1
  6 1
 '''
+'''
 for i in range(n):
     for j in range(i+1, n):
         profit = n_list[i] - n_list[j]
@@ -33,3 +35,19 @@ for i in range(n):
             result_arr.append(profit * -1)
 
 print(max(result_arr))
+'''
+# 변수 선언 및 입력:
+n = int(input())
+price = list(map(int, input().split()))
+
+# 배열을 앞에서부터 순회하며 사는 시점의 후보를 선택합니다
+max_profit = 0
+for i in range(n):
+    # 사는 시점의 다음 해부터 순회하며 파는 시점의 후보를 선택합니다
+    for j in range(i + 1, n):
+        profit = price[j] - price[i]
+
+        if profit > max_profit:
+            max_profit = profit
+    
+print(max_profit)
