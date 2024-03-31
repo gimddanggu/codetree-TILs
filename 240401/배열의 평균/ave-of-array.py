@@ -13,4 +13,4 @@ for j in range(4):
     print( verticalSum / 2, end=' ')
     allsum += verticalSum
 print()
-print(allsum / 8)
+print(f"{allsum / 8:.1f}")
