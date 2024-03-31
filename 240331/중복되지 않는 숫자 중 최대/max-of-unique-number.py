@@ -1,9 +1,9 @@
 n = int(input())
 n_list = list(map(int, input().split()))
-
-cnt_list = [0] * 1000
+maxNum = max(n_list)
+cnt_list = [0] * (maxNum+1)
 idx_list = []
-result = -1
+
 # 각 원소의 개수를 구한다
 # 원소의 개수가 1인 것 중 최대값 고른다.
 
