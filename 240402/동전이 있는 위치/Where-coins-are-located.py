@@ -1,5 +1,5 @@
 m, n = tuple(map(int, input().split()))
-arr_2d = [[0 for _ in range(10)] for _ in range(10)]
+arr_2d = [[0] * 10 for _ in range(10)]
 
 for i in range(n):
     a, b = tuple(map(int, input().split()))
