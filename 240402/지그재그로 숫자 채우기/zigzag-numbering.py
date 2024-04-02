@@ -11,13 +11,13 @@ for i in range(n):
 
 for i in range(1, m):
     
-    if i % 2 == 0:
-        for j in range(n-1):
+    if i % 2 == 0: # 인덱스 홀수열
+        for j in range(n):
             arr_2d[j][i] = num
             num += 1
-            #print(f"j: {j} i: {i}")
+            #print(f"ej: {j} i: {i}")
             
-    else:
+    else: # 인덱스 짝수열
         for j in range(n-1,-1,-1):
             arr_2d[j][i] = num
             num += 1
