@@ -7,7 +7,7 @@ for i in range(1, m+1):
     a, b = tuple(map(int, input().split()))
     arr_2d[a][b] = i
 
-for row in arr_2d:
-    for col in row:
-        print(col, end = ' ')
+for i in range(1,n+1):
+    for j in range(1, n+1):
+        print(arr_2d[i][j], end = ' ')
     print()
