@@ -7,5 +7,5 @@ if n > leng:
     print(rev_str)
 
 else:
-    for i in range(10):
+    for i in range(n):
         print(rev_str[i], end = '')
