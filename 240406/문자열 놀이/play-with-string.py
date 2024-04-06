@@ -9,12 +9,14 @@ for i in range(int(n)):
     if q == '1':
         n1 = int(n1)-1
         n2 = int(n2)-1
+        if n1 > n2:
+            n1, n2 = n2, n1
         a = strr_a[n1]
         b = strr_a[n2]
-        for i in range(len(strr)):    
+        for i in range(len(strr_a)):    
             strr_a = strr_a[:n1] + b + strr_a[n1+1: n2] + a + strr_a[n2+1:]
-        print(strr_a) 
-    else:
+ 
+    elif q == '2':
         '''
         for i in range(len(strr)):
             if n1 == strr[i]:
@@ -23,4 +25,5 @@ for i in range(int(n)):
         print(strr_a, 2)
         '''
         strr_a = strr_a.replace(n1, n2)
-        print(strr_a)
+
+    print(strr_a)
