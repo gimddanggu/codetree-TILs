@@ -1,7 +1,7 @@
-def print_st():
-    print('12345^&*()_')
+def print_st(num):
+    for _ in range(n):
+        print('12345^&*()_')
 
 
 n = int(input())
-for _ in range(n):
-    print_st()
+print_st(n)
