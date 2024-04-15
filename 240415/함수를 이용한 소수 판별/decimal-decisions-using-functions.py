@@ -31,7 +31,7 @@ arr_n = list(map(int, input().split()))
 print(sol(arr_n))
 '''
 
-
+'''
 a, b = tuple(map(int, input().split()))
 
 
@@ -52,3 +52,20 @@ for i in range(a, b + 1):
         sum_val += i
 
 print(sum_val)
+'''
+
+
+def sol_prime_num(n):
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+    
+a, b = tuple(map(int, input().split()))
+n_sum = 0
+for i in range(a, b+1):    
+    if sol_prime_num(i):
+        n_sum += i
+
+print(n_sum)
