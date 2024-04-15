@@ -56,8 +56,6 @@ print(sum_val)
 
 
 def sol_prime_num(n):
-    if n == 1:
-        return False
 
     for i in range(2, n):
         if n % i == 0:
@@ -68,7 +66,7 @@ def sol_prime_num(n):
 a, b = tuple(map(int, input().split()))
 n_sum = 0
 for i in range(a, b+1):    
-    if sol_prime_num(i):
+    if a != 1 and sol_prime_num(i):
         n_sum += i
 
 print(n_sum)
