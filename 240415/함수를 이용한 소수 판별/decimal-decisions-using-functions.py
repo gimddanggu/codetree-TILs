@@ -56,6 +56,9 @@ print(sum_val)
 
 
 def sol_prime_num(n):
+    if n == 1:
+        return False
+
     for i in range(2, n):
         if n % i == 0:
             return False
