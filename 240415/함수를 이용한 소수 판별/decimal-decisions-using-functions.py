@@ -8,7 +8,7 @@
 # 입력값이 두개 오는 경우 정상 처리
 # 1. 소수 판별 함수, 2. 입력 받은 값 몇 개인지 확인하여 구분해주는 함수
 
-
+'''
 def sol(arr):
     sum_n = 0
     if len(arr) == 2:
@@ -29,8 +29,8 @@ def sol_prime_num(n):
     
 arr_n = list(map(int, input().split()))  
 print(sol(arr_n))
-
 '''
+
 
 a, b = tuple(map(int, input().split()))
 
@@ -52,4 +52,3 @@ for i in range(a, b + 1):
         sum_val += i
 
 print(sum_val)
-'''
