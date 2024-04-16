@@ -10,7 +10,7 @@ def sol_date(m, d):
         if d <= 28:
             return True
 
-    else:
+    elif m in [4, 6, 9, 11]:
         if d <= 30:
             return True
     
