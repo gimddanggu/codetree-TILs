@@ -9,6 +9,5 @@ def rec(n):
         return rec(n // 3) + 1
         
     
-
-
-print(rec(230))
+n = int(input())
+print(rec(n))
