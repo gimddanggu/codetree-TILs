@@ -10,7 +10,7 @@ int main() {
         cout << "pass" << endl;
     } 
     else {
-        cout << 100 - a << "more score";
+        cout << 100 - a << " more score";
     }
     return 0;
 }
