@@ -6,7 +6,7 @@ int main() {
     int a;
     cin >> a;
 
-    if ( a > 80 ) {
+    if ( a >= 80 ) {
         cout << "pass" << endl;
     } 
     else {
