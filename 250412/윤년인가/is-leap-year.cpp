@@ -15,7 +15,7 @@ int main() {
         else res = "true";
     
     } else {
-        cout << "true";
+        cout << "false";
     }
     cout << res;
     return 0;
