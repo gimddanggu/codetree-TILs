@@ -11,19 +11,19 @@ int main() {
     int res[10][10];
 
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             cin >> arr1[i][j];
         }
     }
 
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             cin >> arr2[i][j];
         }
     }
 
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < m; j++) {
             if (arr1[i][j] != arr2[i][j]) {
                 res[i][j] = 1;
             }
