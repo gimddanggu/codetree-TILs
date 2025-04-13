@@ -13,7 +13,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cin >> arr1[i][j];
-            res[i][j] = 0;
         }
     }
 
@@ -28,6 +27,7 @@ int main() {
             if (arr1[i][j] != arr2[i][j]) {
                 res[i][j] = 1;
             }
+            else res[i][j] = 0;
             cout << res[i][j] << ' ';
         }
         cout << endl;
