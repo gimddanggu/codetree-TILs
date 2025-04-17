@@ -4,10 +4,13 @@ N = int(input())
 i = 1
 arr = [2, 4]
 def sol(N, i, a, b):
-    if i == N-1:
+    if N == 1:
+        return a
+
+    if i == N:
         return b
     
     c = (a * b) % 100
     return sol(N, i+1, b, c)
 
-print(sol(N, 1, 2, 4))
+print(sol(N, 2, 2, 4))
