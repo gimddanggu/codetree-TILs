@@ -2,7 +2,7 @@ a, b, c = map(int, input().split())
 
 # Please write your code here.
 def calcDayTime(day, hour, minute):
-    if (day < 11):
+    if (day <= 11 and hour <= 11 and minute <= 11):
         return -1
     
     dayTmin = day * 24 * 60
